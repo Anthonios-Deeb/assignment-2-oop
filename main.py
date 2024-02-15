@@ -31,7 +31,7 @@ def main():
                                  "hoping to find a westward route to Asia, but instead,\n"
                                  "he discovered the Americas, changing the course of history forever.")
     # Creating image post
-    p2 = u4.publish_post("Image", 'image1.jpg')
+    p2 = u4.publish_post("Image", '/Users/anthoniosdeeb/Desktop/drizzy.jpg')
 
     # Creating sale post
     p3 = u3.publish_post("Sale", "Toyota prius 2012", 42000, "Haifa")
@@ -56,7 +56,7 @@ def main():
     # more likes and comments
     p3.like(u2)
     p3.comment(u2, "Can you give me your phone number?")
-    p3.comment(u4, "+972 55576433")
+    p3.comment(u4, "+97255576433")
     print()
 
     # Defining the product as sold
@@ -95,7 +95,7 @@ def main():
     print()
 
     # Network printing
-    print(network)
+    print(network, end='')
 
 
 if __name__ == '__main__':
