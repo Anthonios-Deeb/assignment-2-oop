@@ -67,6 +67,8 @@ class User(Sender, Member):
                 print(f"{self.get_username()} unfollowed {temp.get_username()}")
 
     def publish_post(self, *args):
+        if self.is_logged is False:
+            return
         p = postFactory
         post = p.create_post(self, *args)
         print(post)
