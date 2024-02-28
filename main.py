@@ -31,7 +31,7 @@ def main():
                                  "hoping to find a westward route to Asia, but instead,\n"
                                  "he discovered the Americas, changing the course of history forever.")
     # Creating image post
-    p2 = u4.publish_post("Image", 'image1.jpg')
+    p2 = u4.publish_post("Image", '/Users/anthoniosdeeb/Desktop/drizzy.jpg')
 
     # Creating sale post
     p3 = u3.publish_post("Sale", "Toyota prius 2012", 42000, "Haifa")
