@@ -40,5 +40,7 @@ class SocialNetwork:
         for user in Users:
             if user.get_username()==name:
                 return
+        if len(password)<4 or len(password)>8:
+            return
 
         return create_user(name,password)
