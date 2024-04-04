@@ -1,6 +1,4 @@
 import SocialNetwork
-import matplotlib.image as mpimage
-import matplotlib.pyplot as plt
 
 from abc import ABC, abstractmethod
 
@@ -112,7 +110,7 @@ class User(Sender, Member):
 
     # this is the post class it contains the likes and comments and who posted this post and the type of the post
     # this class is part of the factory
-class post():
+class post(ABC):
     def __init__(self, type, user):
         self.__type = type
         self.__likes = []
@@ -176,9 +174,9 @@ class img_post(post):
     # this function displays the image that the user posted using a library
     def display(self):
         print("Shows picture")
-        img = mpimage.imread(self.__img)
-        plt.imshow(img)
-        plt.show()
+        # img = mpimage.imread(self.__img)
+        # plt.imshow(img)
+        # plt.show()
 
     # this function prints that a certain user posted a picture
     def __str__(self):
